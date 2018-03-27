@@ -1,0 +1,28 @@
+For Preset makers: To get mouse pointer for position:
+
+After making the preset/pyplug open it with any text editor and do a find command with: mouseXY
+
+you have to write this line:
+
+
+param.setUsePointInteract(True)
+
+
+in # Set param properties block and before lastNode.mouseXY = param
+
+Example:
+    
+    # Set param properties
+    param.setHelp("")
+    param.setAddNewLine(True)
+    param.setAnimationEnabled(True)
+    param.setValue(270, 0)
+    param.setValue(848, 1)
+    
+    param.setUsePointInteract(True)
+    
+    lastNode.mouseXY = param
+    del param
+
+
+See the sample presets or the tutorial. Hopefully it will be Fixed soon by Natron Devs. Thanks.
