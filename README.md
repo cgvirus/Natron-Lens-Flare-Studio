@@ -5,6 +5,10 @@ https://www.youtube.com/watch?v=tXkwCmVI8y8
 # Making Presets:
 https://www.youtube.com/playlist?list=PLnAARr1S7jUghmwZtJpNS7oHEzJSDcDFG
 
+# Update:
+Merging has been started with Natron Community pyplug as well. It will be mirrored.
+https://github.com/NatronVFX/natron-plugins
+
 Version 2 Roadmap:
 1. REFACTORING : A lot! To make performance better.
 2. More GLSL elements. Contributions are most WELCOME!
