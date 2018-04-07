@@ -1,6 +1,7 @@
 // iChannel0: Link GLSL Elements, filter=linear, wrap=clamp
 // BBox: iChannel0
 
+// MulitiIris Single Layer.frag
 /*
 Implementation and Development by CGVIRUS under GNU GPL Version 3 Licence.
 Some math ideas have derived from some genius minded folks and books.
@@ -11,6 +12,7 @@ Feel free to share the knowledge and any type of code contribution is encouraged
 //Global parametres
 uniform float globalSize = 1.0; // Global Scale, min=0., max=100.
 uniform float globalRotate= 0.0; // Global Rotation, min=0., max=360.
+uniform float evolution= 1.0; // Evolution, min=1.0, max=360.
 
 //Params
 uniform int corpoly = 0; // Circle/Polygon, min=0, max=1
@@ -36,7 +38,7 @@ float rand(float n){
 //multi_iris Objects
 vec3 miris(vec2 uv, vec2 pos, float dist, float size, float irisize, int n, float irisopacity, vec3 iriscolor)
 {
-    float rot = radians(globalRotate);
+    float rot = radians(globalRotate)*evolution;
     mat2 m = mat2(cos(rot), -sin(rot), sin(rot), cos(rot));
     uv  = m*uv;
     pos = m*pos;

@@ -1,6 +1,7 @@
 // iChannel0: Link GLSL Elements, filter=linear, wrap=clamp
 // BBox: iChannel0
 
+// anmorpic_Ghost_SingleLayer.frag
 /*
 Implementation and Development by CGVIRUS under GNU GPL Version 3 Licence.
 Some math ideas have derived from some genius minded folks and books.
@@ -12,6 +13,7 @@ uniform float globalSize = 1.0; // Global Scale, min=0., max=100.
 
 //parametres
 uniform int objectCount= 5; // Object Count, min=0, max=30
+uniform int intesmult= 1; // Intensity Multiplyer, min=1, max=10
 uniform float objectdist = 0.16; // Object Distance , min=-2.,max=2.
 uniform float tapperness = 1.0; // Tapperness, min=0., max=1.
 uniform float cposx = 0.0; // Position X , min=-2.,max=2.
@@ -57,7 +59,7 @@ float objects(vec2 uv, vec2 pos)
         c+= circleBox(vec2((uv.x+cposx+(i*(objectdist-pos.x*.2))),(uv.y+cposy)), pos*-parallax, vec2(sizex,sizey)*globalSize, Thresold, tapperness);
     }
     
-    return c;
+    return c*intesmult;
 }
 
 void mainImage( out vec4 fragColor, in vec2 fragCoord )

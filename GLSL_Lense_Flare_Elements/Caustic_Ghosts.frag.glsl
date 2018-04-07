@@ -1,6 +1,7 @@
 // iChannel0: Link GLSL Elements, filter=linear, wrap=clamp
 // BBox: iChannel0
 
+// Caustic_Ghosts.frag
 /*
 Implementation and Development by CGVIRUS under GNU GPL Version 3 Licence.
 Some base math ideas derived from Musk's Flare https://www.shadertoy.com/view/4sX3Rs
@@ -11,6 +12,7 @@ Feel free to share the knowledge and any type of code contribution is encouraged
 //Global parametres
 uniform float globalSize = 1.0; // Global Scale, min=0., max=100.
 uniform float globalRotate= 0.0; // Global Rotation, min=0., max=360.
+uniform float evolution= 1.0; // Evolution, min=1.0, max=360.
 
 //parametres
 uniform float size = .5; // Size , min=0., max=10.
@@ -43,7 +45,7 @@ vec2 GetDistOffset(vec2 uv, vec2 pxoffset)
 
 vec3 flare(vec2 uv, vec2 pos, float dist, float size, vec3 color)
 {
-    float rot = radians(globalRotate);
+    float rot = radians(globalRotate)*evolution;
     mat2 m = mat2(cos(rot), -sin(rot), sin(rot), cos(rot));
     uv  = m*uv;
     pos = m*pos;

@@ -1,6 +1,7 @@
 // iChannel0: Link a Black Constant, filter=linear, wrap=clamp
 // BBox: iChannel0
 
+// ROOT_Global.frag
 /*
 Implementation and Development by CGVIRUS under GNU GPL Version 3 Licence.
 Some math ideas have derived from some genius minded folks and books.
@@ -10,13 +11,14 @@ Feel free to share the knowledge and any type of code contribution is encouraged
 //parametres
 uniform float globalSize = 1.0; // Global Scale, min=0., max=30.
 uniform float globalRotate= 0.0; // Global Rotation, min=0., max=360.
+uniform float evolution= 1.0; // Evolution, min=1.0, max=360.
 uniform vec3 globaltint = vec3(1.0,1.0,1.0); // Global Tint
 
 
 vec3 blank(vec2 uv, vec2 pos)
 {
     vec2 main = (uv+pos);
-    float elBlank = globalSize+globalRotate;
+    float elBlank = globalSize+globalRotate+evolution;
     return vec3 (elBlank,main);
 }
 

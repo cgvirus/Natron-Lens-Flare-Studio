@@ -1,6 +1,7 @@
 // iChannel0: Link GLSL Elements, filter=linear, wrap=clamp
 // BBox: iChannel0
 
+// rectangle_Rounded.frag
 /*
 Implementation and Development by CGVIRUS under GNU GPL Version 3 Licence.
 Some math ideas have derived from some genius minded folks and books.
@@ -10,6 +11,7 @@ Feel free to share the knowledge and any type of code contribution is encouraged
 //Global parametres
 uniform float globalSize = 1.0; // Global Scale, min=0., max=100.
 uniform float globalRotate= 0.0; // Global Rotation, min=0., max=360.
+uniform float evolution= 1.0; // Evolution, min=1.0, max=360.
 
 //parametres
 uniform float Radius = .25; // Radius, min=0., max=2.
@@ -26,7 +28,7 @@ const float  TWO_PI = 6.28318530718;
 //creates a Rectangle
 float Rectangle (vec2 uv, vec2 pos, vec2 size, float radius, float thickness)
 {
-    float rot = radians(rotation+globalRotate);
+    float rot = radians(rotation+globalRotate)*evolution;
     mat2 m = mat2(cos(rot), -sin(rot), sin(rot), cos(rot));
     uv  = m*uv;
     pos = m*pos;

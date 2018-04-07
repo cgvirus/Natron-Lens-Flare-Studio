@@ -1,6 +1,7 @@
 // iChannel0: Link GLSL Elements, filter=linear, wrap=clamp
 // BBox: iChannel0
 
+// sun.frag
 /*
 Implementation and Development by CGVIRUS under GNU GPL Version 3 Licence.
 Some base math ideas derived from Musk's Flare https://www.shadertoy.com/view/4sX3Rs
@@ -12,6 +13,7 @@ Feel free to share the knowledge and any type of code contribution is encouraged
 //Global parametres
 uniform float globalSize = 1.0; // Global Scale, min=0., max=100.
 uniform float globalRotate= 0.0; // Global Rotation, min=0., max=360.
+uniform float evolution= 1.0; // Evolution, min=1.0, max=360.
 
 //parametres
 uniform float coresize = 2.; // Sun Core Size , min=0., max=100.
@@ -24,7 +26,7 @@ uniform vec3 SunColor = vec3(1.,1.,1.); // Sun Color
 //Procedural Sun Generation
 float sun(vec2 uv, vec2 pos, float size)
 {
-    float rot = radians(rotation+globalRotate);
+    float rot = radians(rotation+globalRotate)*evolution;
     mat2 m = mat2(cos(rot), -sin(rot), sin(rot), cos(rot));
     uv  = m*uv;
     pos = m*pos;
