@@ -1,0 +1,30 @@
+#Lens Flare Elements list to attach in Shadertoy. More Elements Will be added after the initial commit.
+#add these lines below in shadertoy.txt in your shadertoy directory 
+#and copy the whole GLSL_Lense_Flare_Elements folder there
+#See The Tutorial for more clarification
+#Lines starting with '#' are ignored.
+    
+
+#LENS FLARE LISTS(COPY FROM THIS LINE TILL END):
+
+"Lens Flare Elements/anamorphic" "GLSL_Lense_Flare_Elements/anamorphic.frag.glsl"
+"Lens Flare Elements/anmorpic_Ghost_multiLayer" "GLSL_Lense_Flare_Elements/anmorpic_Ghost_multiLayer.frag.glsl"
+"Lens Flare Elements/anmorpic_Ghost_SingleLayer" "GLSL_Lense_Flare_Elements/anmorpic_Ghost_SingleLayer.frag.glsl"
+"Lens Flare Elements/anmorpic_Scaled" "GLSL_Lense_Flare_Elements/anmorpic_Scaled.frag.glsl"
+"Lens Flare Elements/anmorpic_Spot" "GLSL_Lense_Flare_Elements/anmorpic_Spot.frag.glsl"
+"Lens Flare Elements/Caustic_Ghosts" "GLSL_Lense_Flare_Elements/Caustic_Ghosts.frag.glsl"
+"Lens Flare Elements/glimmer" "GLSL_Lense_Flare_Elements/glimmer.frag.glsl"
+"Lens Flare Elements/Glow" "GLSL_Lense_Flare_Elements/Glow.frag.glsl"
+"Lens Flare Elements/Grit_Mask" "GLSL_Lense_Flare_Elements/Grit_Mask.frag.glsl"
+"Lens Flare Elements/hoop_single" "GLSL_Lense_Flare_Elements/hoop_single.frag.glsl"
+"Lens Flare Elements/hoop_MultiLAyer" "GLSL_Lense_Flare_Elements/hoop_MultiLAyer.frag.glsl"
+"Lens Flare Elements/Last_Node" "GLSL_Lense_Flare_Elements/Last_Node.frag.glsl"
+"Lens Flare Elements/MulitiIris Multi Layer" "GLSL_Lense_Flare_Elements/MulitiIris Multi Layer.frag.glsl"
+"Lens Flare Elements/MulitiIris Single Layer" "GLSL_Lense_Flare_Elements/MulitiIris Single Layer.frag.glsl"
+"Lens Flare Elements/polygon" "GLSL_Lense_Flare_Elements/polygon.frag.glsl"
+"Lens Flare Elements/rectangle_Rounded" "GLSL_Lense_Flare_Elements/rectangle_Rounded.frag.glsl"
+"Lens Flare Elements/ring" "GLSL_Lense_Flare_Elements/ring.frag.glsl"
+"Lens Flare Elements/ring_multilayer" "GLSL_Lense_Flare_Elements/ring_multilayer.frag.glsl"
+"Lens Flare Elements/ROOT_Global" "GLSL_Lense_Flare_Elements/ROOT_Global.frag.glsl"
+"Lens Flare Elements/Star" "GLSL_Lense_Flare_Elements/Star.frag.glsl"
+"Lens Flare Elements/sun" "GLSL_Lense_Flare_Elements/sun.frag.glsl"
