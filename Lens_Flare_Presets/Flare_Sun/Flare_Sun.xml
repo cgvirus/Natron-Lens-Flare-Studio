@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Flare_Sun</DisplayName>
+    <Description>A Basic Sun Flare </Description>
+    <Version>1.0</Version>
+    <ReleaseDate>@DATE@</ReleaseDate>
+    <Name>natron.community.plugins.Flare_Sun</Name>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+</Package>
