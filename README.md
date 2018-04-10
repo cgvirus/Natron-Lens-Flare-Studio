@@ -6,14 +6,9 @@ https://www.youtube.com/watch?v=tXkwCmVI8y8&list=PLnAARr1S7jUh_F9XqsdmXZNf9lrkdZ
 https://www.youtube.com/playlist?list=PLnAARr1S7jUghmwZtJpNS7oHEzJSDcDFG
 
 # Update:
-Merging has been started with Natron Community pyplug as well. It will be mirrored.
+1. Merging has been started with Natron Community pyplug as well. It will be mirrored.
+___
 https://github.com/NatronVFX/natron-plugins
 
-Version 2 Roadmap:
-1. REFACTORING : A lot! To make performance better.
-2. More GLSL elements. Contributions are most WELCOME!
-3. More PRESETS
-4. Some atumation for VFX pipeline
-5. Some NON-MODULAR common presets for one-click get-go...
-
-Refactoring will start after April,2018. Hopefully from May 15th. 
+2. 20 Presets has been created
+3. A Texture connection has been developed for making flare textures in photo editing programs and use.
