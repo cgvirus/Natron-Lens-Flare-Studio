@@ -1,7 +1,7 @@
 # Natron-Lens-Flare-Studio
 A free and open source lens flare creation toolkit for Free and Open Source compositor Natron.
 # Demo and Tutorial:
-https://www.youtube.com/watch?v=tXkwCmVI8y8
+https://www.youtube.com/watch?v=tXkwCmVI8y8&list=PLnAARr1S7jUh_F9XqsdmXZNf9lrkdZm5T
 # Making Presets:
 https://www.youtube.com/playlist?list=PLnAARr1S7jUghmwZtJpNS7oHEzJSDcDFG
 
