@@ -28,7 +28,7 @@ def getIconPath():
     return "flareicon.png"
 
 def getGrouping():
-    return "Community/Draw/Lens Flare"
+    return "Community/Lens Flare/Preset Templates"
 
 def getPluginDescription():
     return "A Toxic flare."
@@ -61,6 +61,7 @@ def createInstance(app,group):
     param.setAnimationEnabled(True)
     param.setValue(354, 0)
     param.setValue(838, 1)
+    param.setUsePointInteract(True)
     param.setUsePointInteract(True)
     lastNode.mouseXY = param
     del param

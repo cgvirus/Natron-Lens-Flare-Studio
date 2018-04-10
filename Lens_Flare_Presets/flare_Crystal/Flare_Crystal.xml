@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Flare_Crystal</DisplayName>
+    <Description>A Crystal Flare </Description>
+    <Version>1.0</Version>
+    <ReleaseDate>@DATE@</ReleaseDate>
+    <Name>natron.community.plugins.FlareCrystal</Name>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+</Package>

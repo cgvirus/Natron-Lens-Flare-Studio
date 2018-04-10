@@ -28,7 +28,7 @@ def getIconPath():
     return "flareicon.png"
 
 def getGrouping():
-    return "Community/Draw/Lens Flare"
+    return "Community/Lens Flare/Preset Templates"
 
 def getPluginDescription():
     return "A Scifi falvored Lens Flare."

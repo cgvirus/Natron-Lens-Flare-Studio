@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Flare_Prism</DisplayName>
+    <Description>A Prism Flare </Description>
+    <Version>1.0</Version>
+    <ReleaseDate>@DATE@</ReleaseDate>
+    <Name>natron.community.plugins.FlarePrism</Name>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+</Package>
