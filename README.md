@@ -8,7 +8,7 @@ https://www.youtube.com/playlist?list=PLnAARr1S7jUghmwZtJpNS7oHEzJSDcDFG
 # Update:
 1. Merging has been started with Natron Community pyplug as well. It will be mirrored.
 ___
-https://github.com/NatronVFX/natron-plugins
+https://github.com/NatronGitHub/natron-plugins
 
 2. 20 Presets has been created
 3. A Texture connection has been developed for making flare textures in photo editing programs and use.
